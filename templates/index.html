@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/get_data" method="post">
+        <ul>
+            <li>
+                <label for="login_input">Test data send</label>
+                <input type="text" , id="login_input" , name="login">
+            </li>
+            <li>
+                <label for="password_input">Test data send</label>
+                <input type="text" , id="password_input" , name="password">
+            </li>
+            <li>
+                <label>
+                    <input type="radio", id="first_img_input", name="img_radio", value="first_img">
+                    <img src="{{ url_for('static', filename='img/sunset.jpg') }}", height="100px">
+                </label>
+                <label>
+                    <input type="radio", id="second_img_input", name="img_radio", value="second_img">
+                    <img src="{{ url_for('static', filename='img/sunrise.jpg') }}", height="100px">
+                </label>
+            </li>
+            <li>
+                <button type="submit">Send data</button>
+            </li>
+        </ul>
+    </form>
+</body>
+
+</html>
