@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" href="{{ url_for('static', filename='img/icon.png') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <meta charset="UTF-8">
@@ -22,11 +23,11 @@
             <li>
                 <label>
                     <input type="radio", id="first_img_input", name="img_radio", value="first_img">
-                    <img src="{{ url_for('static', filename='img/sunset.jpg') }}", height="100px">
+                    <img src="{{ url_for('static', filename='img/sunset.jpg') }}">
                 </label>
                 <label>
                     <input type="radio", id="second_img_input", name="img_radio", value="second_img">
-                    <img src="{{ url_for('static', filename='img/sunrise.jpg') }}", height="100px">
+                    <img src="{{ url_for('static', filename='img/sunrise.jpg') }}">
                 </label>
             </li>
             <li>
