@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ok data get:</h1>
+    <ul>
+        <li>
+            login = {{ data['login'] }}
+        </li>
+        <li>
+            password = {{ data['password'] }}
+        </li>
+        <li>
+            image = {{ data['img_radio'] }}
+        </li>
+    </ul>
+    <a href="/">Go back to the main page</a>
+</body>
+
+</html>

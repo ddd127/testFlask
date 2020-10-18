@@ -1,0 +1,15 @@
+body {
+    padding: 15px;
+}
+
+li {
+    margin: 5px;
+}
+
+li::before {
+    content: "-";
+}
+
+input {
+    background-color: lightblue;
+}
