@@ -17,7 +17,6 @@ def ok_page():
 @app.route('/get_data', methods=['POST'])
 def get_data():
     my_dict = flask.request.form
-    print(my_dict)
     return flask.render_template('get_data.html', data=my_dict)
 
 if (__name__ == '__main__'):
