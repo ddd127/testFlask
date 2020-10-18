@@ -1,3 +1,5 @@
+import config
+
 import flask
 
 app = flask.Flask(__name__)
@@ -7,6 +9,4 @@ def main_page():
     return 'Hello, world!'
 
 if (__name__ == '__main__'):
-    app.run()
-
-
+    app.run(host=config.MY_HOST)
