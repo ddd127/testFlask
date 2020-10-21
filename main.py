@@ -9,6 +9,11 @@ def index():
     return flask.render_template('index.html')
 
 
+@app.route('/game_15')
+def game_15() :
+    return flask.render_template('game_15.html')
+
+
 @app.route('/ok_page')
 def ok_page():
     return "OK"
